@@ -24,19 +24,13 @@ accelerator:
         - text: Postgres on Kubernetes
           value: "postgres"
     - name: geo
-      label: Connect in geo
+      label: Geography to connect
       inputType: checkbox
       display: true
       dataType: [string]
       defaultValue: cn
       required: true
-      choices:
-        - text: North America
-          value: [na]
-        - text: Europe
-          value: [eu]
-        - text: China
-          value: [cn]
+ 
 
 engine:
   merge:
