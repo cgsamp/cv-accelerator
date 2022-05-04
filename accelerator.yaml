@@ -25,6 +25,7 @@ accelerator:
           value: "postgres"
     - name: environment
       label: Deployment Target
+      description: Resource type, location and size adjust depending on the type of deployment
       inputType: radio
       display: true
       defaultValue: prod
@@ -40,6 +41,7 @@ accelerator:
         
     - name: geo
       label: Connect in Geo
+      description: This option only applies in Production deployments
       inputType: checkbox
       display: true
       dataType: [string]
