@@ -31,11 +31,11 @@ accelerator:
       defaultValue: cn
       choices:
         - text: North America
-          value: na
+          value: [na]
         - text: Europe
-          value: eu
+          value: [eu]
         - text: China
-          value: cn
+          value: [cn]
 
 engine:
   merge:
