@@ -23,12 +23,29 @@ accelerator:
           value: "mssql"
         - text: Postgres on Kubernetes
           value: "postgres"
-          
+    - name: environment
+      label: Deployment Target
+      inputType: radio
+      display: true
+      defaultValue: prod
+      choices:
+        - text: Production
+          value: prod
+        - text: Staging
+          value: staging
+        - text: Testing
+          value: test
+        - text: Development
+          value: dev
+        
     - name: geo
       label: Connect in Geo
       inputType: checkbox
       display: true
       dataType: [string]
+      dependsOn:
+        name: environment
+        value: [prod]
       defaultValue:
         - na
       choices:
