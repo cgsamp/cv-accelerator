@@ -43,11 +43,11 @@ accelerator:
       inputType: checkbox
       display: true
       dataType: [string]
-      defaultValue:
-        - na
       dependsOn:
         name: environment
-        value: [prod]
+        value: prod
+      defaultValue:
+        - na
       choices:
         - text: North America
           value: na
