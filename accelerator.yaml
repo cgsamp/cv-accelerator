@@ -23,26 +23,6 @@ accelerator:
           value: "mssql"
         - text: Postgres on Kubernetes
           value: "postgres"
-          
-    - name: geo
-      label: Connect in geo:
-      inputType: checkbox
-      display: false
-      dataType: string
-      defaultValue: na
-      choices:
-        - text: North America
-          value: na
-        - text: Europe
-          value: na
-        - text: China
-          value: na
-    - name: memoryCache
-      label: Include a cache (Redis)?
-      inputType: checkbox
-      display: false
-      dataType: boolean
-      defaultValue: false
 
 engine:
   merge:
