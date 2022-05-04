@@ -43,12 +43,6 @@ accelerator:
       display: false
       dataType: boolean
       defaultValue: false
-    - name: memoryCache
-      label: Include a cache (Redis)?
-      inputType: checkbox
-      display: false
-      dataType: boolean
-      defaultValue: false
 
 engine:
   merge:
