@@ -23,7 +23,6 @@ accelerator:
           value: "mssql"
         - text: Postgres on Kubernetes
           value: "postgres"
-      
     - name: geo
       label: Connect in geo
       inputType: checkbox
