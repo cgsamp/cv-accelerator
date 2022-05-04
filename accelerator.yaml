@@ -25,7 +25,8 @@ accelerator:
           value: "postgres"
           
     - name: geo
-      inputType: Include Geos
+      label: Connect in Geo
+      inputType: checkbox
       display: true
       dataType: [string]
       defaultValue:
