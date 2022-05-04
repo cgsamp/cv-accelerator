@@ -1,11 +1,13 @@
 accelerator:
   displayName: Connected Vehicle
-  description: Gather data from connected vehicles
+  description: Connect to Ford vehicles to gather data and provide OTA services. Includes deployment options for development to full multi-region HA/DR. Production deploys access vehicles through dedicated low-latency network and access to large volume data stores accessible by Ford AI/ML systems.
   iconUrl: https://raw.githubusercontent.com/cgsamp/cv-accelerator/main/img/logo.png
   tags:
     - api
     - spring
     - rabbitmq
+    - bigdata
+    - ford
   options:
     - name: databaseType
       label: Database Type
@@ -21,9 +23,29 @@ accelerator:
           value: "mssql"
         - text: Postgres on Kubernetes
           value: "postgres"
+          
+    - name: geo
+      label: Connect in geo:
+      inputType: checkbox
+      display: false
+      dataType: string
+      defaultValue: na
+      choices:
+        - text: North America
+          value: na
+        - text: Europe
+          value: na
+        - text: China
+          value: na
     - name: memoryCache
       label: Include a cache (Redis)?
-      inputType: toggle
+      inputType: checkbox
+      display: false
+      dataType: boolean
+      defaultValue: false
+    - name: memoryCache
+      label: Include a cache (Redis)?
+      inputType: checkbox
       display: false
       dataType: boolean
       defaultValue: false
