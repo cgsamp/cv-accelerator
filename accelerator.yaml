@@ -43,9 +43,6 @@ accelerator:
       inputType: checkbox
       display: true
       dataType: [string]
-      dependsOn:
-        name: environment
-        value: [prod]
       defaultValue:
         - na
       choices:
