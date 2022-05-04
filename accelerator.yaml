@@ -45,6 +45,9 @@ accelerator:
       dataType: [string]
       defaultValue:
         - na
+      dependsOn:
+        name: environment
+        value: [prod]
       choices:
         - text: North America
           value: na
