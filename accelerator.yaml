@@ -12,7 +12,7 @@ accelerator:
     - name: databaseType
       label: Database Type
       inputType: select
-      dataType: string
+      dataType: [string]
       display: true
       required: true
       defaultValue: "BigQuery"
