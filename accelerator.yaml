@@ -28,7 +28,7 @@ accelerator:
       inputType: checkbox
       display: true
       dataType: [string]
-      defaultValue: na
+      defaultValue: cn
       choices:
         - text: North America
           value: na
