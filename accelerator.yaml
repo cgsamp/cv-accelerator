@@ -24,29 +24,20 @@ accelerator:
         - text: Postgres on Kubernetes
           value: "postgres"
           
-    - name: checkbox
-      inputType: checkbox
+    - name: geo
+      inputType: Include Geos
       display: true
       dataType: [string]
       defaultValue:
-        - value-2
+        - na
       choices:
-        - text: Checkbox choice 1
-          value: value-1
-        - text: Checkbox choice 2
-          value: value-2
-        - text: Checkbox choice 3
-          value: value-3
-
-    - name: geo
-      label: Geography to connect
-      inputType: checkbox
-      display: true
-      dataType: [string]
-      defaultValue: cn
-      required: true
+        - text: North America
+          value: na
+        - text: Europe
+          value: eu
+        - text: China
+          value: cn
  
-
 engine:
   merge:
     - include: [ "**/**" ]
