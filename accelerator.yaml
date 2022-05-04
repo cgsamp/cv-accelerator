@@ -23,6 +23,20 @@ accelerator:
           value: "mssql"
         - text: Postgres on Kubernetes
           value: "postgres"
+      
+    - name: geo
+      label: Connect in geo
+      inputType: checkbox
+      display: true
+      dataType: string
+      defaultValue: na
+      choices:
+        - text: North America
+          value: "na"
+        - text: Europe
+          value: "eu"
+        - text: China
+          value: "cn"
 
 engine:
   merge:
